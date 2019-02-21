@@ -12,6 +12,6 @@ spring:
    driver-class-name: com.mysql.cj.jdbc.Driver        
 mybatis:
   mapper-locations: classpath:mapper/*.xml      
-  type-aliases-package ： Pojo
+  type-aliases-package: Pojo
 env:
   ENV
