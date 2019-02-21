@@ -1,0 +1,17 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: Blog
+  datasource:
+   url: jdbc:mysql://47.107.34.159:3306/Blogs?characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+   username: root
+   password: sdad23307216
+   driver-class-name: com.mysql.cj.jdbc.Driver        
+mybatis:
+  mapper-locations: classpath:mapper/*.xml      
+  type-aliases-package: Pojo
+env:
+  env
