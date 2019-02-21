@@ -7,4 +7,4 @@ spring:
   application:
     name: Server
 env:
-  dev
+  devs
