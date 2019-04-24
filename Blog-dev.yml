@@ -10,7 +10,17 @@ spring:
    driver-class-name: com.mysql.cj.jdbc.Driver
   redis:
     host: 47.107.34.159
-    port: 6379  
+    port: 6379 
+  rabbitmq:
+     host: 47.107.34.159
+     username: boss
+     password: boss
+     port: 5672
+     listener:
+        simple:
+           acknowledge-mode: manual #手工签收
+           concurrency: 5 #消费者数量(一次消费多少数据)
+           max-concurrency: 10
 mybatis:
   mapper-locations: classpath:mapper/*.xml      
   type-aliases-package: Pojo
